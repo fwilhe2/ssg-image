@@ -1,5 +1,5 @@
 FROM debian:buster
-RUN apt-get -y update; apt-get -y install cpio libdigest-perl-md5-perl  \
+RUN apt-get -y update; apt-get -y install cpio libdigest-perl-md5-perl git \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/*
 ADD https://rgz.ee/bin/ssg5 /bin
